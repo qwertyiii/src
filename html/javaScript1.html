@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/after_section4.css">
+    <title>Mariela</title>
+</head>
+
+<body>
+    <h1>Меньших Егор Михайлович — Лабораторная работа №9</h1>
+
+    <script>
+
+        function speed(number, type) {
+            if (!number || !type) {
+                console.error('Ошибка');
+            }
+            if (type === 'kmh') {
+                return console.log(`${ number } km / h  соответствует ${ number / 3.6} m / s`);
+        }
+        if (type === 'ms') {
+            return console.log(`${ number } m / s соответствует ${ number * 3.6} km / h`);
+        }
+        }
+
+        function triangle(a, b, c) {
+            if ((a + b) > c && (a + c) > b && (c + b) > a) {
+                const P = a + b + c;
+                const S = (0.5 * (a * b)) * Math.sqrt(c);
+
+                return console.log(`Треугольник существует \nПериметр = ${ P } \nПлощадь = ${ S }`);
+
+            } else {
+                console.log('Такой треугольник не существует')
+            };
+        }
+
+        function fizzBuzz() {
+
+            result = prompt('Введите кол-во циклов');
+            while (result.replace(/\d/g, '').length || result.trim(' ') === "") {
+                result = prompt('Пожалуйста, укажите число в цифрах');
+            }
+
+            while (result > 0) {
+                if (result % 5 === 0) {
+                    console.log('fizz buzz');
+                    result -= 1;
+                    continue
+                }
+                if (result % 2 === 0) {
+                    console.log('buzz');
+                    result -= 1;
+                    continue
+                }
+                else {
+                    console.log('fizz');
+                    result -= 1;
+                    continue
+                }
+            }
+        }
+
+
+        function newYearTree() {
+            for (let i = 0; i <= 12; i++) {
+                if (i == 0) {
+                    console.log('>');
+                    continue
+                }
+                if (i === 12) {
+                    console.log('||');
+                    break
+                }
+                if (i % 2 === 0) {
+                    console.log("#".repeat(i));
+                    continue
+                }
+                else {
+                    console.log("*".repeat(i));
+                    continue
+                }
+            }
+        }
+
+        function guessNumber() {
+
+            result = prompt('Введите предпологаемое число');
+            const num = 2;
+
+            while (true) {
+
+                if (result.replace(/\d/g, '').length || result.trim(' ') === "") {
+                    result = prompt('Пожалуйста, укажите число в цифрах');
+                    continue
+                }
+
+                if (result <= num) {
+                    result = prompt('Ваше число меньше');
+                    continue
+                } else if (result >= num) {
+                    result = prompt('Ваше число больше');
+                } else {
+                    return alert(`Ответ - ${ num }`);
+                }
+
+            }
+        }
+
+        function divide(n, x, y) {
+            4
+            return console.log(`n = ${ n }, x = ${ x }, y = ${ y } => ${(n % x === 0 && n % y === 0)}`);
+        }
+
+        function quarters(x) {
+            if (x >= 13 || x <= 0) {
+                return console.log('Всего 12 месяцев');
+            }
+
+            if (x == 1 || x <= 3) {
+                return console.log(`месяц ${ x } => 1 квартал`);
+            }
+            if (x == 4 || x <= 6) {
+                return console.log(`месяц ${ x } => 2 квартал`);
+            }
+            if (x == 7 || x <= 7) {
+                return console.log(`месяц ${ x } => 3 квартал`);
+            }
+            if (x == 10 || x <= 12) {
+                return console.log(`месяц ${ x } => 4 квартал`);
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

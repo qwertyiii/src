@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/after_section4.css">
+    <title>Mariela</title>
+</head>
+
+<body>
+    <h1>Меньших Егор Михайлович — Лабораторная работа №10</h1>
+    <script>
+        console.log('Задание 1');
+        function convertSpeed(num, units) {
+            if (units === 'toMS') {
+                return console.log(`'${num / 3.6} м/с'`);
+            } else if (units === 'toKMH') {
+                return console.log(`'${num * 3.6} км/ч'`);
+            }
+        }
+
+        convertSpeed(108, 'toMS');
+        convertSpeed(20, 'toKMH');
+
+        console.log('Задание 2');
+        function absValue(number) {
+            if (number >= 0) {
+                return console.log(number);
+            } else {
+                return console.log(-number);
+            }
+        }
+
+        absValue(20);
+        absValue(-15);
+        absValue(0);
+
+        console.log('Задание 3');
+        let student = {
+            group: '201',
+            last_name: 'Иванов',
+            first_name: 'Иван',
+        };
+
+        let keys = '';
+        for (let key in student) {
+            keys += `${key}, `;
+        }
+        console.log(`Список свойств: ${keys.substring(0, keys.length - 2)}`);
+        console.log(`Студент ${student.first_name} ${student.last_name} учится в ${student.group} группе`);
+
+        console.log('Задание 4');
+        function randomNumber(min, max) {
+            const number = min + Math.random() * (max + 1 - min);
+            return Math.floor(number);
+        }
+        console.log(randomNumber(1, 10));
+        console.log(randomNumber(-5, 5));
+
+        console.log('Задание 5');
+        function sampleArray(arr, count) {
+            let new_array = [];
+            for (let i = 0; i < count; i++) {
+                new_array.push(arr[randomNumber(0, arr.length)]);
+            }
+            return new_array;
+        }
+        console.log(sampleArray([1, 2, 3, 4, 5, 6, 7, 8], 2));
+    </script>
+</body>

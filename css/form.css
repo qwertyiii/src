@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap');
+
+.form {
+    font-style: inherit;
+    background-color: #F0EAEA;
+    width: 1440px;
+    color: var(--text);
+}
+
+.form,
+.registr {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.osnforma {
+    display: flex;
+    flex-direction: row;
+}
+
+.lab7 {
+    align-items: center;
+}
+
+.form1,
+.lab7 {
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 {
+    margin-right: 20px;
+}
+
+.form1,
+.form2 {
+    border-style: none;
+    border: thick double var(--background-color);
+    border-radius: 10px;
+    padding: 25px 50px;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 848px;
+}
+
+dt:first-letter {
+    color: var(--background-color);
+    font-size: 25px;
+}
+
+dd:before {
+    content: "🛈";
+}
+
+dl {
+    margin-bottom: 20px;
+}
+
+.zagform {
+    display: flex;
+    font-size: 45px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 35px;
+}
+
+.podzagform {
+    padding: 0 10px;
+}
+
+.buttonform,
+.podzagform {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.buttonform {
+    background-color: var(--white);
+    border: 2px solid var(--background-color);
+    color: var(--text);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 20px 100px auto;
+    padding: 10px 15px;
+}
+
+.buttonsform {
+    margin-right: 110px;
+}
+
+.buttonform:hover { 
+    transition: 0.5s all; 
+    color: #AF7BB0;
+} 
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender label {
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.gender label,
+.pole_inp {
+    border: 1px solid var(--head);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--background-color);
+}
+
+.pole_inp {
+    color: var(--text);
+    display: flex;
+    font-size: 16px;
+    margin: 5px 0 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.pole_inp:focus~span {
+    color: var(--background-color);
+}
+
+.pole_inp:focus {
+    outline: none;
+}
+
+.radio {
+    display: none;
+}
+
+input[type=radio]:checked+label {
+    background-color: var(--background-color);
+    border-style: none;
+    color: var(--white);
+}
+
+.buttonformreset {
+    background-color: var(--white);
+    border: 2px solid var(--background-color);
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+    margin: 20px 20px 100px auto;
+    padding: 10px 60px;
+}
+
+/*.buttonformreset:hover {
+    transition: 0.5s all; 
+    color: #AF7BB0;
+}*/
+
+#inp_name,
+#inp_password,
+#inp_phone {
+    border: 1.5px solid var(--background-color);
+    text-shadow: 1px 1px 1px var(--lightgray);
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.checkelem li:nth-child(2n) {
+    color: var(--background-color);
+}
+
+.checkelem li:nth-child(odd) {
+    color: var(--lightgray)
+}
+
+.check label>input:checked+span,
+.checkelem label>input:checked+span {
+    text-decoration: line-through
+}

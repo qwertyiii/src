@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/after_section4.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Mariela</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="header__logo" src="../img/logo.svg" alt="Mariela"></a>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#home" class="menu__link"> Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#about-me" class="menu__link">About me</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#products" class="menu__link">Products</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#contact-me" class="menu__link">Contact me</a>
+                </li>
+                <li class="menu__item">
+                    <a href="form.html" class="menu__link">Form</a>
+                </li>
+                <li class="menu__item">
+                    <a href="demo.html" class="menu__link">Demo</a>
+                </li>
+                <li class="menu__item">
+                    <a href="javaScript1.html" class="menu__link">JS lab9</a>
+                </li>
+                <li class="menu__item">
+                    <a href="javaScript2.html" class="menu__link">JS lab10</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link"><img src="../img/sc.svg" alt="Shopping cart"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <div class="container">
+                <h1 class="zagform">Регистрация</h1>
+                <form class="registr" action="http://httpbin.org/post" method="post">
+                    <div class="osnforma">
+                        <fieldset class="form1">
+                            <legend class="podzagform">Личная информация</legend>
+                            <label class="label">
+                                <input class="pole_inp" type="text" id="inp_name" name="user_name" placeholder="Иван"
+                                    required>
+                                <span>Имя</span>
+                            </label>
+                            <label class="label">
+                                <input class="pole_inp" type="date" id="inp_bday" name="user_bday"
+                                    placeholder="04.06.2002">
+                                <span>Дата рождения</span>
+                            </label>
+                            <div class="gender">
+                                <input class="radio" type="radio" id="inp_gender1" name="user_gender"
+                                    placeholder="Ваш пол" value="Man"> <label for="inp_gender1">Мужской</label>
+                                <input class="radio" type="radio" id="inp_gender2" name="user_gender"
+                                    placeholder="Ваш пол" value="Woman"><label for="inp_gender2">Женский</label>
+                            </div>
+                        </fieldset>
+                        <fieldset class="form1">
+                            <legend class="podzagform">Контактные данные</legend>
+                            <label class="label">
+                                <input class="pole_inp" type="password" id="inp_password" name="user_password"
+                                    placeholder="password123" required>
+                                <span>Пароль</span>
+                            </label>
+                            <label class="label">
+                                <input class="pole_inp" type="email" id="inp_email" name="user_email"
+                                    placeholder="mail.mail@mail.mail">
+                                <span>E-mail</span>
+                            </label>
+                            <label class="label">
+                                <input class="pole_inp" type="tel" id="inp_phone" name="user_phone"
+                                    placeholder="81234567890" pattern="[0-9]{1}[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                                <span>Телефон</span>
+                            </label>
+                            <label class="label">
+                                <select class="pole_inp" name="user_time" id="inp_time">
+                                    <option value="">Выберите время</option>
+                                    <option value="morning">Утро (6:00-12:00)</option>
+                                    <option value="day">День (12:00-18:00)</option>
+                                    <option value="evening">Вечер(18:00-00:00)</option>
+                                    <option value="night">Ночь (00:00-6:00)</option>
+                                </select>
+                                <span>Удобное время для связи</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="buttonsform">
+                        <button class="buttonform" type="submit">Зарегистрироваться</button>
+                        <button class="buttonformreset" type="reset" disabled>Сбросить</button>
+                    </div>
+                </form>
+                <form class="lab7" action="#" method="post">
+                    <fieldset class="form2">
+                        <legend class="podzagform">Псевдоклассы и псевдоэлементы</legend>
+                        <dl>
+                            <dt>Псевдокласс</dt>
+                            <dd>
+                                особый вид селектора, который уточняет тип или состояние. Обычно это какой-то
+                                качественный признак: реакция на наведение курсора, порядок следования и другие.
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Псевдоэлементы</dt>
+                            <dd>
+                                элементы, которых не существует в HTML-разметке. Они создаются и позиционируются
+                                исключительно при помощи CSS. Чаще всего используются для создания различных
+                                декоративных элементов (которые не несут содержательного смысла).
+                            </dd>
+                        </dl>
+                        <div class="checkboxes">
+                            <ul class="check">
+                                <li>
+                                    <h3>Псевдоклассы</h3>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass" checked>
+                                        <span>:active</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:is()</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:any-link</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:link</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:visited</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass" checked>
+                                        <span>:checked</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:default</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:dir()</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:disabled</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:enabled</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:empty</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass" checked>
+                                        <span>Псевдоклассы группы child</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>Псевдоклассы группы type</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:fullscreen</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass" checked>
+                                        <span>:focus</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:focus-within</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:has()</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass" checked>
+                                        <span>:hover</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:indeterminate</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:in-range</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:out-of-range</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:lang()</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:not()</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:optional</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:required</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:read-only</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:read-write</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass" checked>
+                                        <span>:root</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:target</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:valid</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoclass">
+                                        <span>:invalid</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <ul class="checkelem">
+                                <li>
+                                    <h3>Псевдоэлементы</h3>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoelem" checked>
+                                        <span>::before</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoelem">
+                                        <span>::after</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoelem" checked>
+                                        <span>::first-letter</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoelem">
+                                        <span>::first-line</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoelem" checked>
+                                        <span>::selection</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="pseudoelem" checked>
+                                        <span>::placeholder</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__menu">
+                <a href="#" class="footer__logo">
+                    <img src="../img/logo2.svg" alt="Mariela">
+                </a>
+                <ul class="footer__menu__list">
+                    <li class="footer__menu__item">
+                        <a href="#home" class="footer__menu__link">Home</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#about-me" class="footer__menu__link">About me</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#products" class="footer__menu__link">Products</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a href="#contact-me" class="footer__menu__link">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__facebook">
+                <a href="https://www.facebook.com/"><img src="../img/IMAGE(1).svg" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
